@@ -26,20 +26,4 @@ fn main() {
     let x: i8 = 5;
     let y: Option<i8> = Some(5);
     // let sum = x + y; // incorrect! the trait `Add<Option<i8>>` is not implemented for `i8`
-
-    enum Coin {
-        Penny,
-        Nickel,
-    }
-    fn match_coin(coin: Coin) -> u8 {
-        match coin {
-            Coin::Penny => {
-                println!("match Penny");
-                1
-            }
-            Coin::Nickel => 5,
-        }
-    }
-    println!("{}", match_coin(Coin::Penny));
-    println!("{}", match_coin(Coin::Nickel));
 }
